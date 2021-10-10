@@ -11,10 +11,11 @@ strategy:
 pool:
   vmImage: $(operatingsystem)
 
-stages:
+
+stage:
 - stage: Build
   jobs:
-    job: Buildjob
+  - job: Buildjob
     steps:
     - bash: echo "do the build"
 - stage: Devdeplyjob
