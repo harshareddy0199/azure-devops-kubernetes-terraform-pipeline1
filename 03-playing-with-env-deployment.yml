@@ -27,10 +27,3 @@ stages:
         deploy:
           steps:
           - script: echo deploy to dev
-
-    steps:
-    - bash: echo "do the build"
-steps:
-- script: echo Running on $(operatingsystem)
-  displayName: 'Run a one-line script'
-
