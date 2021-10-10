@@ -12,7 +12,7 @@ pool:
   vmImage: $(operatingsystem)
 
 
-stage:
+stages:
 - stage: Build
   jobs:
   - job: Buildjob
